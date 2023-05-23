@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="animated">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Product Card</title>
+</head>
+<body>
+    
+        <main id="app">
+                <section id="productImage">
+                
+                    <button id="btn360" onclick="toggle()"><img src="./assets/btn360.svg" alt=" click nesse botão para girar o sofa"></button>
+                    <button id="btnClose" onclick="toggle()">
+                        <img src="./assets/btnClose.svg" alt="clik aqui para parar">
+                    </button>
+                        <img src="./assets/sofa.png" alt="sofa" id="static">
+                        <img src="./assets/sofagif.gif" alt="sofa animado" id="animated">
+        
+                </section>
+         
+                <section id="productDetail">
+                    <h4>CÓDIGO: 42404</h4>
+                    <h1>Sofá Margot II - Rosé</h1>
+                    <P>R$ 4.000,00</P>
+                    <button>ADICONAR AO CARRINHO</button>
+    
+
+
+
+                </section>
+        </main>
+        <script>
+            function toggle(){
+                document.documentElement.classList.toggle("animated")
+            }
+        </script>
+
+</body>
+</html>
